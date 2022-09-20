@@ -9,7 +9,7 @@ public class postRequest {
         RestAssured.baseURI="http://fakerestapi.azurewebsites.net/api/v1/Activities";
         RequestSpecification requestSpecification=RestAssured.given();
         requestSpecification.contentType("application/json");
-        requestSpecification.body("{\"id\": 0,\"title\": \"string\",\"dueDate\": \"2022-09-20T19:35:11.214Z\",\"completed\": true}\n");
+       // requestSpecification.body("{\"id\": 0,\"title\": \"string\",\"dueDate\": \"2022-09-20T19:35:11.214Z\",\"completed\": true}\n");
         //another way to put a body
         JSONObject object = new JSONObject();
         object.put("id",10);
